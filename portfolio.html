@@ -1328,7 +1328,26 @@
             elements_selector: ".lazy" //指定哪個element要Lazy Load
         });
     </script>
+<!--    預先載入圖片-->
+    <script type="text/javascript">
+    var images = [];
+    function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
 
+//-- usage --//
+preload(
+    "https://astar417.github.io/sinod22/assets/img/portfolio/p0001.jpg",
+    "https://astar417.github.io/sinod22/assets/img/portfolio/p0002.jpg",
+    "https://astar417.github.io/sinod22/assets/img/portfolio/p0003.jpg",
+    "https://astar417.github.io/sinod22/assets/img/portfolio/p0004.jpg",
+    "https://astar417.github.io/sinod22/assets/img/portfolio/p0005.jpg",
+    "https://astar417.github.io/sinod22/assets/img/portfolio/p0006.jpg"
+)
+   </script> 
 </body>
 
 </html>
