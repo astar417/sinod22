@@ -448,8 +448,21 @@
       }
     </script>   
     
-    
-    
+<!--    預先載入圖片-->
+    <script type="text/javascript">
+    var images = [];
+    function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "https://astar417.github.io/sinod22/assets/img/hero-bg.jpg"
+)
+   </script> 
 </body>
 
 </html>
