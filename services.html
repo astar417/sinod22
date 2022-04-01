@@ -77,7 +77,7 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card">
               <div class="card-img">
                 <img src="assets/img/service-details-1.jpg" alt="...">
@@ -89,7 +89,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 d-flex align-items-stretch">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card">
               <div class="card-img">
                 <img src="assets/img/service-details-2.jpg" alt="...">
@@ -102,7 +102,7 @@
             </div>
 
           </div>
-          <div class="col-md-6 d-flex align-items-stretch">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card">
               <div class="card-img">
                 <img src="assets/img/service-details-3.jpg" alt="...">
@@ -114,7 +114,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 d-flex align-items-stretch">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card">
               <div class="card-img">
                 <img src="assets/img/service-details-4.jpg" alt="...">
@@ -162,7 +162,7 @@
       <div class="container">
         <div class="row" data-aos="fade-up">
           <div class="col-md-5">
-            <img src="assets/img/map/1960-1980.jpg" class="img-fluid" alt="">
+            <img src="assets/img/map/1960-1980.jpg" class="img-fluid lazy" alt="">
           </div>
           <div class="col-md-7 pt-4">
             <h3>1960-1980經濟起步期</h3>
@@ -186,7 +186,7 @@
 
         <div class="row" data-aos="fade-up">
           <div class="col-md-5">
-            <img src="assets/img/map/1981-1990.jpg" class="img-fluid" alt="">
+            <img src="assets/img/map/1981-1990.jpg" class="img-fluid lazy" alt="">
           </div>
           <div class="col-md-7 pt-5">
              <h3>1981~1990代工製造期</h3>
@@ -216,7 +216,7 @@
 
         <div class="row" data-aos="fade-up">
           <div class="col-md-5">
-            <img src="assets/img/map/1991-2000.jpg" class="img-fluid" alt="">
+            <img src="assets/img/map/1991-2000.jpg" class="img-fluid lazy" alt="">
           </div>
           <div class="col-md-7 pt-5">
             <h3>1991~2000 產業轉型期</h3>
@@ -250,7 +250,7 @@
 
         <div class="row" data-aos="fade-up">
           <div class="col-md-5">
-            <img src="assets/img/map/2001-2010.jpg" class="img-fluid" alt="">
+            <img src="assets/img/map/2001-2010.jpg" class="img-fluid lazy" alt="">
           </div>
           <div class="col-md-7 pt-5">
             <h3>2001~2010 知識創新期</h3>
@@ -291,7 +291,7 @@
         </div>
            <div class="row" data-aos="fade-up">
           <div class="col-md-5">
-            <img src="assets/img/map/2011-2022.jpg" class="img-fluid" alt="">
+            <img src="assets/img/map/2011-2022.jpg" class="img-fluid lazy" alt="">
           </div>
           <div class="col-md-7 pt-5">
             <h3>2011~2022 服務加值期</h3>
@@ -419,7 +419,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<!--    lazy-->
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
+    <script type="text/javascript">
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".lazy" //指定哪個element要Lazy Load
+        });
+    </script>
 </body>
 
 </html>
