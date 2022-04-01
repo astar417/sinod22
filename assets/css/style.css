@@ -410,23 +410,50 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 /*--------------------------------------------------------------
-# Hero No Slider Section
+# Hero No Slider Section 
 --------------------------------------------------------------*/
 #hero-no-slider {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   overflow: hidden;
   position: relative;
   text-align: center;
 }
-#hero-no-slider::before {
+#hero-no-slider::before{
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
+/*
+  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg01.jpg") center top no-repeat;
+  background-size: cover;
+*/
+}
+.blog01 {
+  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg01.jpg") center top no-repeat;
+  background-size: cover;
+}
+.blog02 {
+  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg02.jpg") center top no-repeat;
+  background-size: cover;
+}
+.blog03 {
+  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg03.jpg") center top no-repeat;
+  background-size: cover;
+}
+.blog04 {
+  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg04.jpg") center top no-repeat;
+  background-size: cover;
+}
+.blog05 {
+  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg05.jpg") center top no-repeat;
+  background-size: cover;
+}
+.blog06 {
+  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg06.jpg") center top no-repeat;
+  background-size: cover;
 }
 #hero-no-slider h2 {
   color: #fff;
@@ -1423,7 +1450,10 @@ section {
 # Blog
 --------------------------------------------------------------*/
 .blog {
-  padding: 40px 0 20px 0;
+    padding-top: 0px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
 }
 .blog .entry {
   padding: 30px;
@@ -1431,9 +1461,9 @@ section {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 .blog .entry .entry-img {
-  max-height: 440px;
-  margin: -30px -30px 20px -30px;
-  overflow: hidden;
+    max-height: 600px;
+    margin: 0px 0px 20px 0px;
+    overflow: hidden;
 }
 .blog .entry .entry-title {
   font-size: 28px;
@@ -1835,6 +1865,35 @@ section {
   font-size: 14px;
 }
 
+.blog .entry .tags {
+  margin-bottom: -10px;
+}
+.blog .entry .tags ul {
+  list-style: none;
+  padding: 0;
+}
+.blog .entry .tags ul li {
+  display: inline-block;
+}
+.blog .entry .tags ul a {
+  color: #3f8db5;
+  font-size: 14px;
+  padding: 6px 14px;
+  margin: 0 6px 8px 0;
+  border: 1px solid #e4eff5;
+  display: inline-block;
+  transition: 0.3s;
+}
+.blog .entry .tags ul a:hover {
+  color: #fff;
+  border: 1px solid #68A4C4;
+  background: #68A4C4;
+}
+.blog .entry .tags ul a span {
+  padding-left: 5px;
+  color: #bedae8;
+  font-size: 14px;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
