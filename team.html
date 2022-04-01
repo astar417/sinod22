@@ -688,6 +688,24 @@ treeMaker(tree, {
     'link_color': '#484891',
 });
     </script>
+    <!--    預先載入圖片-->
+    <script type="text/javascript">
+    var images = [];
+    function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "https://astar417.github.io/sinod22/assets/img/team/team-1h.jpg",
+    "https://astar417.github.io/sinod22/assets/img/team/team-2h.jpg",
+    "https://astar417.github.io/sinod22/assets/img/team/team-3h.jpg",
+    "https://astar417.github.io/sinod22/assets/img/team/team-4h.jpg"
+)
+   </script>    
 </body>
 
 </html>
